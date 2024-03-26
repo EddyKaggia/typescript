@@ -1,7 +1,4 @@
-"use strict";
 // STYLE 1: Demonstrates TS similarity to Java and C#
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.TodoItem = void 0;
 /*
 export class TodoItem {
     public id: number;
@@ -22,7 +19,7 @@ export class TodoItem {
 
 */
 // STYLE 2: More concise
-class TodoItem {
+export class TodoItem {
     id;
     task;
     complete;
@@ -35,4 +32,3 @@ class TodoItem {
         console.log(`${this.id}\t${this.task} ${this.complete ? "\t(complete)" : ""}`);
     }
 }
-exports.TodoItem = TodoItem;
