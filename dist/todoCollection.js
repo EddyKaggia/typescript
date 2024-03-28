@@ -3,6 +3,7 @@ export class TodoCollection {
     userName;
     todoItems;
     nextId = 1;
+    // Protected keyword tell TS compiler that a property can only be accessed by a class or its subclasses
     itemMap = new Map();
     constructor(userName, todoItems = []) {
         this.userName = userName;

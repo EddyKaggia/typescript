@@ -2,6 +2,7 @@ import { TodoItem } from "./todoItem.js";
 import { TodoCollection } from "./todoCollection.js";
 //inquirer library to create a command-line interface for interacting with the todo list application
 import inquirer from "inquirer";
+import { JsonTodoCollection } from "./jsonTodoCollection.js";
 
 let todos: TodoItem[] = [
   new TodoItem(1, "Buy Flowers"),
@@ -10,7 +11,7 @@ let todos: TodoItem[] = [
   new TodoItem(4, "Call Joe", true),
 ];
 
-let collection: TodoCollection = new TodoCollection("Adam", todos);
+let collection: TodoCollection = new JsonTodoCollection("Adam", todos);
 let showCompleted = true;
 
 function displayTodoList(): void {
